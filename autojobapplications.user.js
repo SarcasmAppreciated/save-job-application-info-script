@@ -5,6 +5,8 @@
 // @description  Saving applications
 // @author       sarcasmappreciated
 // @include      /https:\/\/.*(greenhouse).*/
+// @downloadURL  https://github.com/SarcasmAppreciated/save-job-application-info-script/raw/mainline/autojobapplications.user.js
+// @updateURL    https://github.com/SarcasmAppreciated/save-job-application-info-script/raw/mainline/autojobapplications.user.js
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_addValueChangeListener
@@ -28,7 +30,7 @@
             GM_setValue(flushNow, false);
             const listener = GM_addValueChangeListener (
                 flushNow, (keyName, oldValue, newValue, bRmtTrggrd) => {
-                    // console.log(`Received new event: ${newValue}`);
+                // console.log(`Received new event: ${newValue}`);
                 const job = GM_getValue(buffer, null);
                 if (newValue === true && job) {
                     setTimeout ( () => {
