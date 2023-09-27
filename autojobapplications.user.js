@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Auto-saving Applications
+// @name         Auto-saving Job Applications
 // @namespace    sarcasmappreciated_projects
 // @version      1.0
 // @description  Saving applications
